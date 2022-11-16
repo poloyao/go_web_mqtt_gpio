@@ -11,6 +11,7 @@ var (
 	pin = rpio.Pin(21)
 )
 
+// 根据订阅pi的内容操控GPIO引脚动作高低电平
 func SubscriptionFunc(topic string, data []byte) {
 	println(topic, string(data))
 
